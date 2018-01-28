@@ -1,8 +1,8 @@
-# name = input("Hello there, what's your name? \n")
-# print("Hello, " + name + "!\n")
-#
-# age = input("I know it might be rude, but what's your age? \n")
-# print("Okay, so your name is " + name + " and you're " + age + " years old. Cool.")
+name = input("Hello there, what's your name? \n")
+print("Hello, " + name + "!\n")
+
+age = input("I know it might be rude, but what's your age? \n")
+print("Okay, so your name is " + name + " and you're " + age + " years old. Cool.")
 
 # print('Zefir wielkim czarownikiem nekromantą był'[::3])
 
@@ -20,9 +20,9 @@
 # mylist[2] = 'Andrzej'
 # print(mylist)
 
-list1 = ['Earth', 'Wind', 'Fire']
-list2 = ['Water', 'Heart']
-list1.extend(list2)
-print(list1)
+# list1 = ['Earth', 'Wind', 'Fire']
+# list2 = ['Water', 'Heart']
+# list1.extend(list2)
+# print(list1)
 
 # dictionaries are used very often in Python, they are very fast and super efficient

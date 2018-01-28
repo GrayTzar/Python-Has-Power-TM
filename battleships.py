@@ -49,11 +49,11 @@ field_gen(battlefield)
 
 ship_number = int(input('How many ships? (1-3)'))
 gen_ships(ship_number)
-field_gen(ships) #  cheat mode
+# field_gen(ships) #  cheat mode
 
 
 turns = int(input('How many turns? (1-4)'))
-
+score = 0
 for turn in range(turns):
     user_shot = input('Where are you shooting?\n')
 
@@ -71,6 +71,7 @@ for turn in range(turns):
             ship_number -= 1
             print("It's a hit!")
             ships[loc_x][loc_y] = 100
+            score = score + 1
         elif ships[loc_x][loc_y] == 0:
             battlefield[loc_x][loc_y] = '-'
             print("It's a miss!")
@@ -82,4 +83,4 @@ for turn in range(turns):
         break
 
 
-print('Thanks for playing!')
+print('Thanks for playing! Your score is ' + str(score))
